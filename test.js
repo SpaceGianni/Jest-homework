@@ -45,7 +45,7 @@ test(" 1 dollar should be 106.58 japanese yen", function(){
     const roundeYen =  yen.toFixed(2);
 
     // transform the output into a number result. From "" to Number.
-    let numberYen = Number(roundeYen);
+    let numberYen = parseFloat(roundeYen);
 
     // this is the comparison for the unit test
      expect(fromDollarToYen(50)).toBe(5329.17); // 50 dollars should be 5329.17 japanese yen (rounded)
@@ -72,7 +72,7 @@ test(" From yen to pounds", function(){
     const roundedPounds =  pounds.toFixed(2);
 
     // transform the output into a number result. From "" to Number.
-    let numberPounds = Number(roundedPounds);
+    let numberPounds = parseFloat(roundedPounds);
 
     // this is the comparison for the unit test
      expect(fromYenToPound (4700)).toBe(29.4); // 4700 japanese yen should be 29.4 british pounds (rounded)

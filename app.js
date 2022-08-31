@@ -25,7 +25,7 @@ const fromDollarToYen = function(valueInDollar){
     //round the number
     let roundedYen =  yen.toFixed(2);
     //convert de input into a number output
-    let numberYen = Number(roundedYen) ;
+    let numberYen = parseFloat(roundedYen) ;
     //return the YEN value
     return numberYen;
 }
@@ -37,9 +37,9 @@ const fromYenToPound = function(valueInYen){
     // convert the euros to british pounds. 36.74745895 * 0.8
     const pounds = valueInEuro * 0.8;
     //round the number
-    let roundedPounds =  pounds.toFixed(2);
+    let roundedPounds = pounds.toFixed(2);
     //convert de input into a number output
-    let numberPound = Number(roundedPounds) ;
+    let numberPound = parseFloat(roundedPounds) ;
     //return the YEN value
     return numberPound;
 }
